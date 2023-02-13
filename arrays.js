@@ -14,3 +14,15 @@ console.log(map2)
 
 const arrayFor = ['a', 'b', 'c'];   // forEach() method
 arrayFor.forEach(element => console.log(element));
+
+
+const arr3 = ["Cecilie", "Lone"];    //concat method() for merging aarays
+const arr4 = ["Emil", "Tobias", "Linus"];
+const arr5 = ["Robin", "Morgan"];
+const myChildren = arr3.concat(arr4, arr5);
+console.log(myChildren)
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];   // slice method
+fruits.splice(0, 1);
+console.log(fruits)

@@ -49,3 +49,22 @@ function defaultParams(name = 'Lilia') {
     console.log(name)
 }
 defaultParams()
+
+
+// Callback Function
+function greet(name, myFunction) {
+    console.log('Hello world');
+    myFunction(name);
+}
+
+function sayName(name) {
+    console.log(`Hello ${name}!`);
+}
+
+greet('Lilia', sayName)
+
+
+// arrow function
+
+const numberSum = (a) => a + 100;
+console.log(numberSum(5))
