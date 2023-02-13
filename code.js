@@ -4,9 +4,32 @@
 
 let age = 23
 
+let myNumber = 123;
+console.log(myNumber.toString())   // toString() method
+console.log((123).toString())
+console.log((100 + 23).toString())
+console.log((100 + 23).toString())
+
+
+let expNumber = 9.656;   // toExponential() method
+console.log(expNumber.toExponential(2))
+console.log(expNumber.toExponential(4))
+console.log(expNumber.toExponential(6))
+
 // strings
 
 let firstName = 'Lilia'
+
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";   // method .length
+let lengthStr = text.length;
+console.log('String length', lengthStr)
+
+console.log("Blue Whale".toLowerCase().includes("blue"))  //method .includes()
+
+
+let cityText = "Lviv : Please visit Lviv! (LVIV)";  // method .replace()
+let newCityText = cityText.replace("Lviv", "Kyiv");
+console.log(newCityText)
 
 // boolean
 
