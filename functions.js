@@ -68,3 +68,4 @@ greet('Lilia', sayName)
 
 const numberSum = (a) => a + 100;
 console.log(numberSum(5))
+
