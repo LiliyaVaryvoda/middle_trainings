@@ -2,18 +2,22 @@
 // executes function getInstance with checking if instance exists or no
 
 let Singleton = (function () {
-    let instance;
+    let instance;   // Змінна яка містить наш обєкт
 
+// функція яка створює цей обєкт
     function createInstance() {
+// ту обєкт, але може бути і інше
         let object = new Object('I am the instance');
         return object
     }
-
+// метод return що перевіряє якщо цей інстанс не існує, то ми її запишемо
+// якщо створена повертаємо instance, якщо ні, то ми її створемо, запишемо в змінну новий обєкт і повернемо його
     return {
         getInstance: function () {
             if (!instance) {
                 instance = createInstance();
             }
+            return instance
         }
     }
 })();
